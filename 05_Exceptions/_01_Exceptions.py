@@ -22,6 +22,7 @@ def main():
         print(Add(None, 2))
     except ValueError as e:
         # print(e.__repr__())
-        print(f"{e!r}", file=sys.stderr)
+        # print(f"{e!s}", file=sys.stderr)
+        print(f"{str(e)}", file=sys.stderr)
 
 main()
